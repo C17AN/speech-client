@@ -15,7 +15,7 @@ const Meeting = ({ roomName, userName }) => {
   const [currentSocket, setCurrentSocket] = useState();
 
   useEffect(() => {
-    setCurrentSocket(io("http://localhost:5000"));
+    setCurrentSocket(io("https://speech-server-test.herokuapp.com/"));
   }, []);
 
   if (currentSocket) {
